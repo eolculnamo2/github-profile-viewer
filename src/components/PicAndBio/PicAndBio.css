@@ -1,0 +1,18 @@
+.bio-box{
+    height: 50vh;
+    display: inline-block;
+    margin-left: 2%;
+    width: 300px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.text{
+    text-align: center;
+}
+.username{
+    font-size: 35px;
+}
+.image{
+    border-radius: 50%;
+    width: 300px;
+}
