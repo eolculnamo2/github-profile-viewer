@@ -10,7 +10,7 @@ class PicAndBio extends React.Component{
             imgUrl: ""
         }
     }
-    componentDidMount(){
+    fetchRequest(){
         fetch("https://api.github.com/users/"+this.props.currentUser)
         .then((response)=>{
             return response.json();
@@ -23,6 +23,12 @@ class PicAndBio extends React.Component{
             });
         });
     }
+    componentDidMount(){
+        this.fetchRequest()
+    }
+    componentWillReceiveProps(){
+        this.fetchRequest()
+    }   
     render(){
         return(
             <div className="bio-box">

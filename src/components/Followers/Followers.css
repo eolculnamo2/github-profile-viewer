@@ -1,0 +1,29 @@
+.follower{
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+}
+.follower-box{
+    border: 1px solid grey;
+    padding: 25px; 
+    border-radius: 20px;
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    height: 50vh;
+    overflow-y: auto;
+}
+.follower-title{
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 5%;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.follower-img{
+    width: 15vw;
+    border-radius: 50%;
+    padding: 5px;
+}
+.inline-block{
+    display: inline-block;
+}

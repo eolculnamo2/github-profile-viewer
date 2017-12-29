@@ -8,7 +8,7 @@ class RepoBox extends React.Component{
             repos: []
         }
     }
-    componentDidMount(){
+    fetchRequest(){
         fetch("https://api.github.com/users/"+this.props.currentUser+"/repos")
         .then((response)=>{
             return response.json();
@@ -21,7 +21,12 @@ class RepoBox extends React.Component{
             this.setState({repos: repoData});
         });
     }
-
+    componentDidMount(){
+        this.fetchRequest();
+    }
+    componentWillReceiveProps(){
+        this.fetchRequest();
+    }
     render(){
         return(<div className="inline">
         <h2 className="heading">Repos</h2>
