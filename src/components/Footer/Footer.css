@@ -1,0 +1,14 @@
+.link{
+    color: white !important;
+}
+.footer{
+    bottom: 100%;
+    left: 0;
+    height: 15vh;
+    background-color: #636363;
+    color: white;
+    text-align: center;
+}
+.footer-text{
+    padding: 10px;
+}

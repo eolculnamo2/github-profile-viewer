@@ -4,6 +4,7 @@ import PicAndBio from './components/PicAndBio/PicAndBio.js';
 import RepoBox from './components/RepoBox/RepoBox.js';
 import Following from './components/Following/Following.js';
 import Followers from './components/Followers/Followers.js';
+import Footer from './components/Footer/Footer.js'
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
         <Following changeUser={this.changeUser} currentUser={this.state.currentUser}/>
         <Followers changeUser={this.changeUser} currentUser={this.state.currentUser}/>
         </center>
+        <Footer/>
       </div>
     );
   }

@@ -23,6 +23,7 @@
     width: 15vw;
     border-radius: 50%;
     padding: 5px;
+    cursor: pointer;
 }
 .inline-block{
     display: inline-block;
