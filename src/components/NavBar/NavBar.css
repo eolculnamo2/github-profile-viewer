@@ -1,10 +1,15 @@
 .nav-bar{
     top: 0;
     left: 0;
-    width: 104%;
+    width: 100%;
     background-color: black;
     color: white;
     font-size: 35px;
-    padding: 20px;
     font-family: 'Quicksand', sans-serif;
+    border: 0px;
+}
+.nav-title{
+    border: 0;
+    padding: 20px;
+    margin: 0;
 }
