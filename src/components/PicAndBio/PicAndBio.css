@@ -16,3 +16,15 @@
     border-radius: 50%;
     width: 300px;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .bio-box{
+      width: 95%;
+      margin: auto;
+     }
+     .image{
+       display: block;
+       margin: 0 auto;
+     }
+   
+   }

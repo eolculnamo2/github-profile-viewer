@@ -11,14 +11,15 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      currentUser: "eolculnamo2"
+      currentUser: "eolculnamo2",
+      viewProfile: false
     }
     this.changeUser = this.changeUser.bind(this);
   }
   changeUser(username){
     this.setState({currentUser: username})
   }
-  render() {
+  profileView(){
     return (
       <div>
         <NavBar/>
@@ -32,6 +33,22 @@ class App extends Component {
       </div>
     );
   }
+  searchView(){
+    return(
+      <div>
+        <NavBar/>
+        <Footer/>
+        </div>
+    )
+  }
+  render() {
+    if(this.state.viewProfile){
+      return this.searchView();
+    }
+    else{
+      return this.profileView();
+    }
+  }
 }
-
+//c6ff96a3fe7ba37a289b07c58f6ed96f87e19045
 export default App;

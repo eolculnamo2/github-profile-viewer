@@ -21,3 +21,12 @@ a{
 a:hover{
     color: orange;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .inline{
+      display: block;
+      width: 95%;
+      margin: auto;
+     }
+   
+   }

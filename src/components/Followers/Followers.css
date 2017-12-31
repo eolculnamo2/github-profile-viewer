@@ -28,3 +28,19 @@
 .inline-block{
     display: inline-block;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .follower{
+      display: block;
+      width: 95%;
+      margin: auto;
+     }
+     .follower-box{
+     width: 95%;
+     margin: auto;
+     }
+     .follower-img{
+     width: 300px;
+     }
+   
+   }
