@@ -2,7 +2,7 @@
     color: white !important;
 }
 .footer{
-    bottom: 100%;
+    top: 100vh;
     left: 0;
     height: 15vh;
     background-color: #636363;

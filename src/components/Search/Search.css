@@ -1,0 +1,23 @@
+.search{
+    text-align: center;
+    height: 68vh;
+}
+.search-text{
+    font-family: 'Quicksand', sans-serif;
+}
+.search-input{
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 10px 15px 10px 15px;
+    margin-top: 2%;
+    width: 200px;
+    outline: none;
+    font-size: 150%;
+}
+.search-button{
+    background-color: #629dfc;
+    padding: 20px 25px 20px 25px;
+    border-radius: 20px;
+    margin-left: 2%;
+    font-size: 100%;
+}

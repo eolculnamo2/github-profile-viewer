@@ -5,7 +5,7 @@ class NavBar extends React.Component{
     render(){
         return(
             <div className="nav-bar">
-                Git Profile Viewer
+                <span onClick ={this.props.returnToSearch}>Git Profile Viewer</span>
                 </div>
         )
     }
