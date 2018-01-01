@@ -8,8 +8,8 @@ class Following extends React.Component{
             following: []
         }
     }
-    fetchRequest(){
-        fetch("https://api.github.com/users/"+this.props.currentUser+"/following")
+    fetchRequest(props){
+        fetch("https://api.github.com/users/"+props+"/following")
         .then((response)=>{
             return response.json();
         })
@@ -22,10 +22,10 @@ class Following extends React.Component{
         });
     }
     componentDidMount(){
-        this.fetchRequest();
+        this.fetchRequest(this.props.currentUser);
     }
-    componentWillReceiveProps(){
-        this.fetchRequest();
+    componentWillReceiveProps(nextProps){
+        this.fetchRequest(nextProps.currentUser);
     }
     handleClick(e){
         //calls back to function in props in App.js

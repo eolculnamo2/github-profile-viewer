@@ -8,8 +8,8 @@ class RepoBox extends React.Component{
             repos: []
         }
     }
-    fetchRequest(){
-        fetch("https://api.github.com/users/"+this.props.currentUser+"/repos")
+    fetchRequest(props){
+        fetch("https://api.github.com/users/"+props+"/repos")
         .then((response)=>{
             return response.json();
         })
@@ -22,10 +22,10 @@ class RepoBox extends React.Component{
         });
     }
     componentDidMount(){
-        this.fetchRequest();
+        this.fetchRequest(this.props.currentUser);
     }
-    componentWillReceiveProps(){
-        this.fetchRequest();
+    componentWillReceiveProps(nextProps){
+        this.fetchRequest(nextProps.currentUser);
     }
     render(){
         return(<div className="inline">

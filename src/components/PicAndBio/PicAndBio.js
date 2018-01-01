@@ -10,8 +10,8 @@ class PicAndBio extends React.Component{
             imgUrl: ""
         }
     }
-    fetchRequest(){
-        fetch("https://api.github.com/users/"+this.props.currentUser)
+    fetchRequest(props){
+        fetch("https://api.github.com/users/"+props)
         .then((response)=>{
             return response.json();
         })
@@ -24,10 +24,10 @@ class PicAndBio extends React.Component{
         });
     }
     componentDidMount(){
-        this.fetchRequest()
+        this.fetchRequest(this.props.currentUser)
     }
-    componentWillReceiveProps(){
-        this.fetchRequest()
+    componentWillReceiveProps(nextProps){
+        this.fetchRequest(nextProps.currentUser)
     }   
     render(){
         return(

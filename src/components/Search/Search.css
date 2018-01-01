@@ -20,4 +20,6 @@
     border-radius: 20px;
     margin-left: 2%;
     font-size: 100%;
+    cursor: pointer;
+    outline: none;
 }
