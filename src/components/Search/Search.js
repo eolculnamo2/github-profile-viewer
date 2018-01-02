@@ -25,7 +25,7 @@ class Search extends React.Component{
                         Search By Username
                         </h3>
             <form>
-                <input className="search-input" placeholder="GitHub Username" ref="username"/>
+                <input id ="searchInput" className="search-input" placeholder="GitHub Username" ref="username"/>
                 <button type="submit" onClick={this.handleClick.bind(this)} className="search-button">
                     Search User
                     </button>
