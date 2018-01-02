@@ -34,7 +34,7 @@ class RepoBox extends React.Component{
             {this.state.repos.map((x,i)=>{
                 
                 return (<div key ={"repos"+i.toString()}>
-                    <a target="_blank" href = {"https://github.com/"+x.full_name}><h3 className="text">{x.name}</h3></a>
+                    <a target="_blank" href = {"https://github.com/"+x.full_name}><h3 className="text-list">{x.name}</h3></a>
                 </div>)
             })}
             </div>

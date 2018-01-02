@@ -19,6 +19,7 @@
 
 @media only screen and (max-device-width: 480px) {
     .bio-box{
+      height: 80vh;
       width: 95%;
       margin: auto;
      }
